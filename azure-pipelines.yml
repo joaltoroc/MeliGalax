@@ -27,6 +27,14 @@ stages:
     displayName: Build
     pool:
       vmImage: $(vmImageName)
+    variables:
+      # a regular variable
+      - name: KeySecret
+        value: RzNQYU1+Y3ZkSUsxdS1YSmhDeDR4aTZ1NS1rSUY4LWYyVw==
+      - name: KeyId
+        value: MmViYWNjYWMtMGMzYS00ODJjLTkxODItOGNjODA5NGE5MmNk
+      - name: KeyUrl
+        value: bWVsaWdhbGF4
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
