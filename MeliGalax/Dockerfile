@@ -20,8 +20,8 @@ ARG KeyId
 ARG KeySecret
 ARG KeyUrl
 
-ENV KeyId=KeyId
-ENV KeySecret=KeySecret
-ENV KeyUrl=KeyUrl
+ENV KeyId=$KeyId
+ENV KeySecret=$KeySecret
+ENV KeyUrl=$KeyUrl
 
 ENTRYPOINT ["dotnet", "MeliGalax.Service.API.dll"]

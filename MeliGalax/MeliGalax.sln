@@ -13,15 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeliGalax.Service.Models", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeliGalax.Service.Data", "MeliGalax.Service.Data\MeliGalax.Service.Data.csproj", "{FE2EB616-E899-4BEA-B20E-63AE425D7BB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeliGalax.Service.Domain", "MeliGalax.Service.Domain\MeliGalax.Service.Domain.csproj", "{D1E488E5-8C72-4B9B-855B-3C0A05BD4E32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeliGalax.Service.Domain", "MeliGalax.Service.Domain\MeliGalax.Service.Domain.csproj", "{D1E488E5-8C72-4B9B-855B-3C0A05BD4E32}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{826E1F30-45E4-44AF-AA74-04F649935348}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MeliGalax.DB", "MeliGalax.DB\MeliGalax.DB.sqlproj", "{03EB295A-8732-4F80-8095-F40CECE12016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeliGalax.Service.Tools", "MeliGalax.Service.Tools\MeliGalax.Service.Tools.csproj", "{19D1F90B-5B1A-4DBA-AD23-3D4A5DA908BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeliGalax.Service.Tools", "MeliGalax.Service.Tools\MeliGalax.Service.Tools.csproj", "{19D1F90B-5B1A-4DBA-AD23-3D4A5DA908BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeliGalax.Service.API", "MeliGalax.Service.API\MeliGalax.Service.API.csproj", "{0483250E-9822-46E5-A280-AF215A0D2B95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeliGalax.Service.API", "MeliGalax.Service.API\MeliGalax.Service.API.csproj", "{0483250E-9822-46E5-A280-AF215A0D2B95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Doc", "_Doc", "{9D53037F-C208-4F0A-A242-A8013AA34087}"
 	ProjectSection(SolutionItems) = preProject
@@ -58,7 +58,6 @@ Global
 		{D1E488E5-8C72-4B9B-855B-3C0A05BD4E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1E488E5-8C72-4B9B-855B-3C0A05BD4E32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{03EB295A-8732-4F80-8095-F40CECE12016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03EB295A-8732-4F80-8095-F40CECE12016}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03EB295A-8732-4F80-8095-F40CECE12016}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{03EB295A-8732-4F80-8095-F40CECE12016}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03EB295A-8732-4F80-8095-F40CECE12016}.Release|Any CPU.Build.0 = Release|Any CPU
