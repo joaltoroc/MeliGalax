@@ -26,3 +26,7 @@ MeliGalax/MeliGalax.DB/obj/
 MeliGalax/MeliGalax.Service.API/bin/
 
 MeliGalax/MeliGalax.Service.API/obj/
+
+*.dbmdl
+
+*.jfm
