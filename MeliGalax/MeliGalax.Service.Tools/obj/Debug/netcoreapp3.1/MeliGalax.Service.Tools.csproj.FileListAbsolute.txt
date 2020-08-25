@@ -1,0 +1,9 @@
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\bin\Debug\netcoreapp3.1\MeliGalax.Service.Tools.deps.json
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\bin\Debug\netcoreapp3.1\MeliGalax.Service.Tools.dll
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\bin\Debug\netcoreapp3.1\MeliGalax.Service.Tools.pdb
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\obj\Debug\netcoreapp3.1\MeliGalax.Service.Tools.csprojAssemblyReference.cache
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\obj\Debug\netcoreapp3.1\MeliGalax.Service.Tools.AssemblyInfoInputs.cache
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\obj\Debug\netcoreapp3.1\MeliGalax.Service.Tools.AssemblyInfo.cs
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\obj\Debug\netcoreapp3.1\MeliGalax.Service.Tools.csproj.CoreCompileInputs.cache
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\obj\Debug\netcoreapp3.1\MeliGalax.Service.Tools.dll
+E:\PY\JA\MG\MeliGalax\MeliGalax.Service.Tools\obj\Debug\netcoreapp3.1\MeliGalax.Service.Tools.pdb

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MeliGalax.Service.API</name>
+    </assembly>
+    <members>
+        <member name="M:MeliGalax.Service.API.Controllers.ClimaController.ObtenerClima(System.Int32)">
+            <summary>
+            Obtiene el estado del clima en el día ingresado.
+            </summary>
+            <param name="dia">Día a consultar.</param>
+            <returns>Información del clima.</returns>
+        </member>
+    </members>
+</doc>
