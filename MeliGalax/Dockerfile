@@ -5,7 +5,7 @@ EXPOSE 443
 
 COPY . .
 RUN dotnet restore
-RUN dotnet publish /MeliGalax.Service.API/MeliGalax.Service.API.csproj -c Release -o out
+RUN dotnet publish ~/MeliGalax.Service.API/MeliGalax.Service.API.csproj -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim
 WORKDIR /app
