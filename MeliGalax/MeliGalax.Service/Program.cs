@@ -10,6 +10,9 @@
 
     public static class Program
     {
+        /// <summary>
+        /// Defines the entry point of the application.
+        /// </summary>
         public static async Task Main()
         {
             var hostBuilder = new HostBuilder()
@@ -32,7 +35,7 @@
                 {
                     services.AddData(hostContext.Configuration);
                     services.AddDomain();
-                    
+
                     services.AddScoped<IHostedService, TimedHostedService>();
                 });
 

@@ -8,10 +8,21 @@
 
     public class DomainDatos : IDomainDatos
     {
+        /// <summary>
+        /// The logger
+        /// </summary>
         private readonly ILogger<DomainDatos> Logger;
 
+        /// <summary>
+        /// The repository resultado
+        /// </summary>
         private readonly Data.Base.IBaseRepository<Models.DAO.Resultado> RepositoryResultado;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DomainDatos"/> class.
+        /// </summary>
+        /// <param name="logger">The logger.</param>
+        /// <param name="repositoryResultado">The repository resultado.</param>
         public DomainDatos(ILogger<DomainDatos> logger,
                            Data.Base.IBaseRepository<Models.DAO.Resultado> repositoryResultado)
         {
@@ -19,6 +30,9 @@
             RepositoryResultado = repositoryResultado;
         }
 
+        /// <summary>
+        /// Ejecución de la instancia para el cálculo de los años.
+        /// </summary>
         public async Task Handle()
         {
             try
@@ -34,13 +48,15 @@
 
                 List<Models.DAO.Resultado> resultados = new List<Models.DAO.Resultado>();
 
-                // Inicio de días hasta 10 años
+                // Inicio de días hasta 10 años basados en 360 grados.
                 for (int dia = 0; dia < 3600; dia++)
                 {
                     var sistemaPlaneta = new Models.DTO.Sistema(dia, planetaFerengi, planetaBetasoide, planetaVulcano);
 
+                    // Validación. Si contiene el planeta y el área es cero, se encuentra líneales
                     if (sistemaPlaneta.ContienePlaneta(planetaVulcano) && sistemaPlaneta.ObtenerArea() == 0)
                     {
+                        // Validación. Si contiene el sol
                         if (sistemaPlaneta.ContienePlaneta(planetaBase))
                         {
                             resultados.Add(new Models.DAO.Resultado
@@ -62,6 +78,7 @@
                         });
                         continue;
                     }
+                    // Vaidación. Si contiene solo el sol.
                     else if (sistemaPlaneta.ContienePlaneta(planetaBase))
                     {
                         resultados.Add(new Models.DAO.Resultado
@@ -83,10 +100,13 @@
                     });
                 }
 
+                // Validar los días de lluvia intensa.
                 resultados = resultados.Select(s => { s.Intensidad = resultados.Max(m => m.Perimetro) == s.Perimetro ? "Intensa" : string.Empty; return s; }).ToList();
 
+                // Almacenar la información.
                 await RepositoryResultado.AddAsync(resultados);
 
+                // Calcular la cantidad de días según el clima.
                 var resumen = resultados.GroupBy(g => g.EstadoClima).Select(s => new { Clima = s.Key, Cantidad = s.Count() }).ToList();
                 resumen.Add(new { Clima = "Lluvia Intensa", Cantidad = resultados.Count(c => !string.IsNullOrEmpty(c.Intensidad)) });
 

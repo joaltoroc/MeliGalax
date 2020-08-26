@@ -8,6 +8,11 @@
 
     public static class StartupData
     {
+        /// <summary>
+        /// Inicializador de los datos y repositorios bases.
+        /// </summary>
+        /// <param name="services">Collección de servicio.</param>
+        /// <param name="configuration">Configuración de variables.</param>
         public static void AddData(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<Data.Context.MeliGaxContext>(options =>

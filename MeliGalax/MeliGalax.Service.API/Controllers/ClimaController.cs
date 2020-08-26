@@ -7,8 +7,15 @@ namespace MeliGalax.Service.API.Controllers
     [Route("[controller]")]
     public class ClimaController : ControllerBase
     {
+        /// <summary>
+        /// The domain resultados
+        /// </summary>
         private readonly Domain.DomainResultados.IDomainResultados DomainResultados;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ClimaController"/> class.
+        /// </summary>
+        /// <param name="domainResultados">The domain resultados.</param>
         public ClimaController(Domain.DomainResultados.IDomainResultados domainResultados)
         {
             DomainResultados = domainResultados;
